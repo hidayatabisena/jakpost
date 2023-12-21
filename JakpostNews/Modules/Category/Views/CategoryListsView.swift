@@ -15,10 +15,15 @@ struct CategoryListsView: View {
             VStack {
                 CategoriesView(viewModel: viewModel)
                 
-                List(viewModel.news, id: \.link) { post in
-                    NewsRowView(post: post)
+                if viewModel.isContentUnavailable {
+                    ContentUnavailableView()
+                        .modifier(VCenterModifier())
+                } else {
+                    List(viewModel.news, id: \.link) { post in
+                        NewsRowView(post: post)
+                    }
+                    .listStyle(.plain)
                 }
-                .listStyle(.plain)
             }
             .navigationTitle(Constants.ViewTitles.news)
             .task {

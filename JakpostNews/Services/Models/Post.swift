@@ -29,13 +29,13 @@ struct Post: Codable {
     let image: String
     let headline, category: String
     let imageDesc: String?
-    let pusblisedAt: String
+    let publishedAt: String
     let premiumBadge: String?
     
     enum CodingKeys: String, CodingKey {
         case link, title, image, headline, category
         case imageDesc = "image_desc"
-        case pusblisedAt = "pusblised_at"
+        case publishedAt = "pusblised_at"
         case premiumBadge = "premium_badge"
     }
 }

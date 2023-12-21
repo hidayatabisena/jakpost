@@ -10,6 +10,7 @@ import SwiftUI
 class CategoryViewModel: ObservableObject {
     @Published var categories: [CategoryElement] = []
     @Published var news: [Post] = []
+    @Published var isContentUnavailable: Bool = false
     @Published var selectedCategory: String? {
         didSet {
             if let category = selectedCategory, !category.isEmpty {
@@ -37,6 +38,7 @@ class CategoryViewModel: ObservableObject {
     func loadNews(forSelectedCategory category: String?) {
         guard let category = category?.lowercased(), !category.isEmpty else { return }
         print("Loading news for category: \(category)")
+        isContentUnavailable = false
         
         Task {
             do {
@@ -48,6 +50,7 @@ class CategoryViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.errorMessage = error.localizedDescription
                     print("Error loading news: \(error)")
+                    self.isContentUnavailable = true
                 }
             }
         }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53034F382B33BB8A001EF3AA /* ContentUnavailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53034F372B33BB8A001EF3AA /* ContentUnavailableView.swift */; };
+		53034F3B2B33BD0A001EF3AA /* VCenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53034F3A2B33BD0A001EF3AA /* VCenterModifier.swift */; };
 		5336C48B2B330CBD002CC889 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336C48A2B330CBD002CC889 /* Post.swift */; };
 		5336C48D2B330D66002CC889 /* NewsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336C48C2B330D66002CC889 /* NewsServices.swift */; };
 		5336C4912B330DE7002CC889 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336C4902B330DE7002CC889 /* NewsViewModel.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53034F372B33BB8A001EF3AA /* ContentUnavailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUnavailableView.swift; sourceTree = "<group>"; };
+		53034F3A2B33BD0A001EF3AA /* VCenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCenterModifier.swift; sourceTree = "<group>"; };
 		5336C48A2B330CBD002CC889 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5336C48C2B330D66002CC889 /* NewsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsServices.swift; sourceTree = "<group>"; };
 		5336C4902B330DE7002CC889 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
@@ -58,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53034F392B33BCF0001EF3AA /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				53034F3A2B33BD0A001EF3AA /* VCenterModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		5336C4882B32F9C0002CC889 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5336C4A22B332B2E002CC889 /* NewsRowView.swift */,
+				53034F372B33BB8A001EF3AA /* ContentUnavailableView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -172,6 +185,7 @@
 		536698932B32E8B900C46D78 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				53034F392B33BCF0001EF3AA /* Modifier */,
 				5336C4982B3314DE002CC889 /* Extensions */,
 				5336C4882B32F9C0002CC889 /* Assets */,
 				536698942B32E8D600C46D78 /* Resources */,
@@ -313,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5336C4A02B331B84002CC889 /* CategoryViewModel.swift in Sources */,
+				53034F382B33BB8A001EF3AA /* ContentUnavailableView.swift in Sources */,
 				536698852B32E7C000C46D78 /* CategoryListsView.swift in Sources */,
 				5336C49E2B331B10002CC889 /* CategoryServices.swift in Sources */,
 				5336C4912B330DE7002CC889 /* NewsViewModel.swift in Sources */,
@@ -322,6 +337,7 @@
 				536698962B32EA0F00C46D78 /* Constants.swift in Sources */,
 				5336C49C2B3318B4002CC889 /* CategoriesView.swift in Sources */,
 				5336C4952B330EA3002CC889 /* Protocol.swift in Sources */,
+				53034F3B2B33BD0A001EF3AA /* VCenterModifier.swift in Sources */,
 				5336C48B2B330CBD002CC889 /* Post.swift in Sources */,
 				5336C4932B330E0B002CC889 /* NewsListView.swift in Sources */,
 				5336C48D2B330D66002CC889 /* NewsServices.swift in Sources */,
